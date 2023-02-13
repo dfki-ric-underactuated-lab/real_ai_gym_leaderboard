@@ -1,11 +1,14 @@
-name: Advanced Usage
+name: Leaderboard Creation 
 
 on: push
 
 jobs:
-  convert_via_pandoc:
+  create_leaderboard:
     runs-on: ubuntu-18.04
     steps:
+      - uses: actions/checkout@v2
+      - name: create file list
+
       - uses: docker://pandoc/latex:2.9
         with:
           args: --output=output/leaderboard.pdf leaderboard.md 
