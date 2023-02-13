@@ -1,0 +1,16 @@
+name: Advanced Usage
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=output/leaderboard.pdf leaderboard.md 
+      
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output
