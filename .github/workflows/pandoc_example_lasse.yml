@@ -7,7 +7,10 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - name: create file list
+      - name: create_output
+        id: output
+        run: |
+          mkdir output # create output dir
 
       - uses: docker://pandoc/latex:2.9
         with:
