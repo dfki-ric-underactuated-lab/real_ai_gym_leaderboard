@@ -21,7 +21,7 @@ jobs:
           name: page
           path: output
 
- deploy:
+  deploy:
     runs-on: ubuntu-latest
     needs: build
     environment:
