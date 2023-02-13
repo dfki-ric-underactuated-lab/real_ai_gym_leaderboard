@@ -14,9 +14,32 @@ jobs:
 
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --output=output/leaderboard.pdf leaderboard.md 
+          args: --output=output/leaderboard.html leaderboard.md 
       
       - uses: actions/upload-artifact@master
         with:
-          name: output
+          name: github-pages
           path: output
+
+  
+  # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
