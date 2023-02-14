@@ -16,7 +16,7 @@ jobs:
         id: output
         run: |
           mkdir output # create output dir
-
+          cp -R static output/static # copy static dir      
       - uses: docker://pandoc/extra:latest
         with:
           args: -s -o output/index.html -f csv --css=static/style.css leaderboard.csv
