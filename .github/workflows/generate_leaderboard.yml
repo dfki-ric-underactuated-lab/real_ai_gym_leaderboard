@@ -19,7 +19,7 @@ jobs:
 
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --output=output/index.html leaderboard.csv
+          args: -s leaderboard.csv -o=output/index.html
       
       - uses: actions/upload-artifact@master
         with:
