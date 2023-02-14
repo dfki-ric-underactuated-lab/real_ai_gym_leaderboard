@@ -1,5 +1,0 @@
-# Demo Leaderboard
-
-test
-
-test
