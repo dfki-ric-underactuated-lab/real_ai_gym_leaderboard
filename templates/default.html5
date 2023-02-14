@@ -32,6 +32,8 @@ $endif$
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+<script type="text/javascript" src="static/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="static/sorttable.js"></script>
 </head>
 <body>
 $for(include-before)$
@@ -69,5 +71,7 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
+
+
 </body>
 </html>
