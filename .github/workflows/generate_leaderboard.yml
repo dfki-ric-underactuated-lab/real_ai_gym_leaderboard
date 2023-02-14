@@ -19,7 +19,7 @@ jobs:
           cp -R static output/static # copy static dir      
       - uses: docker://pandoc/extra:latest
         with:
-          args: -s -o output/index.html -f csv --metadata title="Real AI Leaderboard Prototype" --css=static/style.css --template=templates/default.html5 --include-after=static/style_tables.js leaderboard.csv
+          args: -s -o output/index.html -f csv --metadata title="🦾 Real AI Test Leaderboard 🦿" --css=static/style.css --template=templates/default.html5 --include-after=static/style_tables.js leaderboard.csv
       
       - uses: actions/upload-artifact@master
         with:
