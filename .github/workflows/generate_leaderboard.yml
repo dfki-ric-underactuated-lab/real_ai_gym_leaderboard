@@ -15,10 +15,10 @@ jobs:
       - name: create_output
         id: output
         run: |
-          apt install pandoc 
+          sudo apt-get install -y pandoc 
           mkdir output # create output dir
           cp -R static output/static # copy static dir 
-          convert.sh # convert files with pandoc
+          ./convert.sh # convert files with pandoc
       
       - uses: actions/upload-artifact@master
         with:
