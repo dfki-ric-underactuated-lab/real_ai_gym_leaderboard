@@ -1,11 +1,5 @@
 # Demo Leaderboards
-experimenting with pandoc CI
-
-## Steps
-- generate becnhmarks and save data to csv
-- read leaderboard from csv
-- pass through pandoc to generate html
-- deploy on gh pages 
+all `.csv` files pushed to this repo will be rendered under https://dfki-ric-underactuated-lab.github.io/real_ai_gym_leaderboard/
 
 ## Resources
 - https://github.com/pandoc/pandoc-action-example

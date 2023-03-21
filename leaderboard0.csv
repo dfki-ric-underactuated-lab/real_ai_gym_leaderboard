@@ -1,12 +1,12 @@
-Controller,Swingup Time,Energy,Max. Torque,Real AI Rank, Username
-ctl1,10,100,5,2,user1
-ctl4,10,100,54,2,user1
-ctl1,12,14500,5,2,user3
-ctl5,150,102,5,2,user2
-ctl5,140,1702,5,2,user2
-ctl5,1,102,5,2,user2
-ctl5,6,102,5,24,user2
-ctl100,60,102,5,2,user2
-ctl5,10,102,5,2,user5
-ctl8,10,102,5,24,user2
-ctl5,1440,15002,5,2,user2
+Controller,Category 1,category2
+ctl1,10,100
+ctl4,10,100
+ctl1,12,14500
+ctl5,150,102
+ctl5,140,1702
+ctl5,1,102
+ctl5,6,102
+ctl100,60,102
+ctl5,10,102
+ctl8,10,102
+ctl5,1440,15002
