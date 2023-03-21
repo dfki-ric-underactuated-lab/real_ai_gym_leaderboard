@@ -11,4 +11,5 @@ ctl5,10,102,5,2,user5
 ctl8,10,102,5,24,user2
 ctl5,1440,15002,5,2,user2
 testcontroller,1440,15002,5,2,user2
+trigger_workflow,1440,15002,5,2,user2
 
