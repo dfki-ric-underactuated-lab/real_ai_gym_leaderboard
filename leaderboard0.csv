@@ -9,4 +9,4 @@ ctl5,6,102
 ctl100,60,102
 ctl5,10,102
 ctl8,10,102
-ctl5,1440,\[Link text Here\](https://www.dfki.de)
+ctl5,1440,[Link text Here](https://www.dfki.de)
