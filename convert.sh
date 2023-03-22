@@ -18,7 +18,9 @@ for csv_file in ${csv_dir}/*.csv; do
   # convert table to md
   echo "Running command: ${to_md_cmd}"
   ${to_md_cmd}
-   
+  
+  # replace all \ chars to allow for links
+  sed -i 's/\\//g' $out_dir/$file_name.md 
 
   # find matching description.md in root dir, check if it exists. if exists, append it to the md file generated in the last step.
   if [ -e $file_name.md ]; then
