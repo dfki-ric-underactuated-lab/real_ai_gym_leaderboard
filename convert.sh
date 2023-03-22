@@ -13,12 +13,28 @@ for csv_file in ${csv_dir}/*.csv; do
   # get the file_name
   file_name=$(basename ${csv_file} .csv)
 
-  # Specify the command to run on each CSV file
-  command_to_run="pandoc -s -o $out_dir/$file_name.html -f csv --metadata title=$file_name --css=static/style.css --template=templates/default.html5 --include-after=static/style_tables.js"
+
+  to_md_cmd="pandoc -s -o $out_dir/$file_name.md -f csv --metadata title=$file_name $csv_file"
+  # convert table to md
+  echo "Running command: ${to_md_cmd}"
+  ${to_md_cmd}
+   
+
+  # find matching description.md in root dir, check if it exists. if exists, append it to the md file generated in the last step.
+  if [ -e $file_name.md ]; then
+    echo "File $file_name has additional md content!" 
+    # append newline
+    printf "\n" >> $out_dir/$file_name.md
+    # append additional md content
+    cat $file_name.md >> $out_dir/$file_name.md
+
+  fi
+  # convert to html
+  to_html_cmd="pandoc -s -o $out_dir/$file_name.html --metadata title=$file_name --css=static/style.css --template=templates/default.html5 --include-after=static/style_tables.js $out_dir/$file_name.md"
   
   # Run the command on the current CSV file
-  echo "Running command: ${command_to_run} ${csv_file}"
-  ${command_to_run} ${csv_file}
+  echo "Running command: ${to_html_cmd}"
+  ${to_html_cmd}
 
   # add to list of files
   processed_files+=("$file_name")
