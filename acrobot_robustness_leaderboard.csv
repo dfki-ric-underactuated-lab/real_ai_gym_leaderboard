@@ -1,4 +1,4 @@
-Controller,Model [%],Velocity Noise [%], Torque Noise [%], Torque Step Response [%], Time delay [s],Overall Robustness Score,Username,Data
+Controller,Model [%],Velocity Noise [%], Torque Noise [%], Torque Step Response [%], Time delay [%],Overall Robustness Score,Username,Data
 ilqrfree,20.5,4.8,4.8,9.5,4.8,0.089,fwiebe,[Data and Plots](https://github.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/tree/main/data/acrobot/robustness/ilqrfree)
 ilqr_riccati_lqr,6.2,28.6,38.1,71.4,4.8,0.298,fwiebe,[Data and Plots](https://github.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/tree/main/data/acrobot/robustness/ilqr_riccati_lqr)
 pflcol_lqr,41.9,47.6,81.0,52.4,28.6,0.503,fwiebe,[Data and Plots](https://github.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/tree/main/data/acrobot/robustness/pflcol_lqr)
