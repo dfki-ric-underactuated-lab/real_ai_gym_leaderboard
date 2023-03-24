@@ -1,8 +1,18 @@
-Description of Leaderboards, links to repos, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The [RealAIGym](https://dfki-ric-underactuated-lab.github.io/real-ai-gym/)
+leaderboards compare the performances of different controllers on the RealAIGym
+testbenches. More details on the specific leaderboards can be found in the
+under the respective leaderboards and the github repositories.
+
+Currently open sourced RealAIGym repositories are
+
+    - [Simple Pendulum](https://github.com/dfki-ric-underactuated-lab/torque_limited_simple_pendulum)
+    - [Double Pendulum](https://github.com/dfki-ric-underactuated-lab/double_pendulum) (Acrobot/Pendubot)
+    - [Acromonk](https://github.com/dfki-ric-underactuated-lab/acromonk)
 
 ## Leaderboards
 
 :::leaderboard-links:::
 
-## More stuff
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Participating
+Instructions and rules for participating in the competition can be found under
+the respective leaderboards.
