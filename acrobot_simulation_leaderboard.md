@@ -34,8 +34,8 @@ Dynamics](https://dfki-ric-underactuated-lab.github.io/double_pendulum/dynamics.
 
 The acrobot is simulated with a Runge-Kutta 4 integrator with a timestep of $dt
 = 0.002 \, \text{s}$ for $T = 10 \, \text{s}$. The initial acrobot configuration
-is $x_0 = (0.0, 0.0, 0.0, 0.0)$ (hanging down) and the goal is the unstable
-fixpoint at the upright configuration $x_g = (\pi, 0.0, 0.0, 0.0)$.
+is $x_0 = (0, 0, 0, 0)$ (hanging down) and the goal is the unstable
+fixpoint at the upright configuration $x_g = (\pi, 0, 0, 0)$.
 The upright position is considered to be reached when the end-effector is above
 the threshold line at $h=0.45 \, \text{m}$ (origin at the mounting point).
 
@@ -60,7 +60,7 @@ overall score (Real AI Score). The criteria are:
   - **Torque Smoothness** $c_{\tau, smooth}$: The standard deviation of the changes in the torque
     signal.
   - **Velocity Cost** $c_{vel, cost}$: A quadratic cost on the joint velocities that were reached
-    during the execution ( $c_{vel} = \dot{q}^T Q \dot{q}$ )
+    during the execution ( $c_{vel} = \dot{q}^T Q \dot{q}$, with Q = identity)
 
 These criteria are used to calculate the overall Real AI Score with the formula
 
