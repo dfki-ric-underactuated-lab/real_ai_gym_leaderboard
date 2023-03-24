@@ -5,9 +5,9 @@ under the respective leaderboards and the github repositories.
 
 Currently open sourced RealAIGym repositories are
 
-    - [Simple Pendulum](https://github.com/dfki-ric-underactuated-lab/torque_limited_simple_pendulum)
-    - [Double Pendulum](https://github.com/dfki-ric-underactuated-lab/double_pendulum) (Acrobot/Pendubot)
-    - [Acromonk](https://github.com/dfki-ric-underactuated-lab/acromonk)
+- [Simple Pendulum](https://github.com/dfki-ric-underactuated-lab/torque_limited_simple_pendulum)
+- [Double Pendulum](https://github.com/dfki-ric-underactuated-lab/double_pendulum) (Acrobot/Pendubot)
+- [Acromonk](https://github.com/dfki-ric-underactuated-lab/acromonk)
 
 ## Leaderboards
 
