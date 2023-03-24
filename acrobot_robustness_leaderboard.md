@@ -5,7 +5,7 @@ methods by perturbing the simulation e.g. with noise or delay. The task for the
 controller is to swingup and balance the acrobot even with these perturbations.
 
 <div align="center">
-<img width="400" src="data/acrobot/robustness/pflcol_lqr/score_plot.png">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/robustness/pflcol_lqr/score_plot.png">
 </div>
 
 The model parameters of the acrobot are:
@@ -60,12 +60,12 @@ overall score (Real AI Score). The criteria are:
     be constant but change during the execution. The motor, however, is sometimes
     not able to react immediately to large torque changes and will instead
     overshoot or undershoot the desired value.  This behavior is modelled by
-    applying the torque :math:`\tau = \tau_{t-1} + k_{resp} (\tau_{des} -
-    \tau_{t-1})` instead of the desired torque :math:`\tau_{des}`.  Here,
-    :math:`\tau_{t-1}` is the applied motor torque from the last time step and
-    :math:`k_{resp}` is the factor which scales the responsiveness.
-    :math:`k_{resp} = 1` means the torque response is perfect while
-    :math:`k_{resp} \neq 1` means the motor is over/undershooting the desired
+    applying the torque $\tau = \tau_{t-1} + k_{resp} (\tau_{des} -
+    \tau_{t-1})$ instead of the desired torque $\tau_{des}$.  Here,
+    $\tau_{t-1}$ is the applied motor torque from the last time step and
+    $k_{resp}$ is the factor which scales the responsiveness.
+    $k_{resp} = 1$ means the torque response is perfect while
+    $k_{resp} \neq 1$ means the motor is over/undershooting the desired
     torque. 
   - **Time delay** $c_{delay}$: When operating on a real system there will always be time delays
     due to communication and reaction times. 
