@@ -34,7 +34,7 @@ for csv_file in ${csv_dir}/*.csv; do
 
   fi
   # convert to html
-  to_html_cmd="pandoc -s -o $out_dir/$file_name.html --metadata title=$file_name --css=static/style.css --template=templates/default.html5 --include-after=static/style_tables.js $out_dir/$file_name.md"
+  to_html_cmd="pandoc -s -o $out_dir/$file_name.html --metadata title=$file_name --mathjax --css=static/style.css --template=templates/default.html5 --include-after=static/style_tables.js $out_dir/$file_name.md"
   
   # Run the command on the current CSV file
   echo "Running command: ${to_html_cmd}"
