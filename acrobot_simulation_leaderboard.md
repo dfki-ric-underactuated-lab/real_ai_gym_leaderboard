@@ -5,7 +5,7 @@ methods in simulation. The task for the controller is to swingup and balance
 the acrobot and keep the end-effector above the threshold line.
 
 <div align="center">
-<img width="400" src="data/acrobot/simulation/ilqr_tvlqr/sim_video.gif">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/simulation/ilqr_tvlqr/sim_video.gif">
 </div>
 
 The model parameters of the acrobot are:
@@ -44,35 +44,37 @@ the threshold line at $h=0.45 \, \text{m}$ (origin at the mounting point).
 For the evaluation multiple criteria are evaluated and weighted to calculate an
 overall score (Real AI Score). The criteria are:
 
-    - **Swingup Success** $c_{success}$: Whether the swingup was successful, i.e. if the
-      end-effector is above the threshold line in the end of the simulation.
-    - **Swingup time** $c_{time}$: The time it takes for the acrobot to reach the goal region
-      above the threhhold line and *stay there*. If the end-effector enters the
-      goal region but falls below the line before the simulation time is over the
-      swingup is not considered successful! The swingup time is the time when the
-      end-effector enters the goal region and does not leave the region until the end.
-    - **Energy** $c_{energy}$: The mechanical energy used during the execution. 
-    - **Max Torque** $c_{\tau, max}$: The peak torque that was used during the execution.
-    - **Integrated Torque** $c_{\tau, integ}$: The time integral over the used torque over the
-      execution duration.
-    - **Torque Cost** $c_{\tau, cost}$: A quadratic cost on the used torques ($ c_{\tau, cost} = \sum uRu$, with R
-      = 1).
-    - **Torque Smoothness** $c_{\tau, smooth}$: The standard deviation of the changes in the torque
-      signal.
-    - **Velocity Cost** $c_{vel, cost}$: A quadratic cost on the joint velocities that were reached
-      during the execution (c_{vel} = \dot{q}^T Q \dot{q})
+  - **Swingup Success** $c_{success}$: Whether the swingup was successful, i.e. if the
+    end-effector is above the threshold line in the end of the simulation.
+  - **Swingup time** $c_{time}$: The time it takes for the acrobot to reach the goal region
+    above the threhhold line and *stay there*. If the end-effector enters the
+    goal region but falls below the line before the simulation time is over the
+    swingup is not considered successful! The swingup time is the time when the
+    end-effector enters the goal region and does not leave the region until the end.
+  - **Energy** $c_{energy}$: The mechanical energy used during the execution. 
+  - **Max Torque** $c_{\tau, max}$: The peak torque that was used during the execution.
+  - **Integrated Torque** $c_{\tau, integ}$: The time integral over the used torque over the
+    execution duration.
+  - **Torque Cost** $c_{\tau, cost}$: A quadratic cost on the used torques ( $c_{\tau, cost} = \sum u^TRu$, with R
+    = 1).
+  - **Torque Smoothness** $c_{\tau, smooth}$: The standard deviation of the changes in the torque
+    signal.
+  - **Velocity Cost** $c_{vel, cost}$: A quadratic cost on the joint velocities that were reached
+    during the execution ( $c_{vel} = \dot{q}^T Q \dot{q}$ )
 
 These criteria are used to calculate the overall Real AI Score with the formula
 
 $$
-S = c_{success} \left( \omega_{time}\frac{c_{time}}{n_{time}} + 
-                     \omega_{energy}\frac{c_{energy}}{n_{energy}} +  
-                     \omega_{\tau, max}\frac{c_{\tau, max}}{n_{\tau, max}} +  
-                     \omega_{\tau, integ\frac{c_{\tau, integ}}{n_{\tau, integ}} +  
-                     \omega_{\tau, cost}\frac{c_{\tau, cost}}{n_{\tau, cost}} +  
-                     \omega_{\tau, smooth}\frac{c_{\tau, smooth}}{n_{\tau, smooth}} +  
-                     \omega_{vel, cost}\frac{c_{vel, cost}}{n_{vel, cost}}  
-              \right)
+\begin{equation}
+S = c_{success} \left( \omega_{time}\frac{c_{time}}{n_{time}} +
+\omega_{energy}\frac{c_{energy}}{n_{energy}} +
+\omega_{\tau, max}\frac{c_{\tau, max}}{n_{\tau, max}} +
+\omega_{\tau, integ}\frac{c_{\tau, integ}}{n_{\tau, integ}} +
+\omega_{\tau, cost}\frac{c_{\tau, cost}}{n_{\tau, cost}} +
+\omega_{\tau, smooth}\frac{c_{\tau, smooth}}{n_{\tau, smooth}} +
+\omega_{vel, cost}\frac{c_{vel, cost}}{n_{vel, cost}}
+\right)
+\end{equation}
 $$
 
 The weights and normalizations are:

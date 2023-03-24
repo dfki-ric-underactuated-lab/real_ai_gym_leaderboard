@@ -1,1 +1,1 @@
-<script>$( "table" ).last().addClass( "sortable" );</script>
+<script>$( "table" ).addClass( "sortable" );</script>
