@@ -21,12 +21,12 @@ The model parameters of the acrobot are:
   - Second link inertia: $I_2 = 0.053878129629650884 \, \text{kg m}^2$
   - First actuator damping friction: $b_1 = 0.0 \, \frac{\text{kg m}}{s}$
   - Second actuator damping friction: $b_2 = 0.0 \, \frac{\text{kg m}}{s}$
-  - First actuator coulomb friction: $c_\textrm{f1}: 0.0 \, \text{N m}$
-  - Second actuator coulomb friction: $c_\textrm{f2}: 0.0 \, \text{N m}$
+  - First actuator coulomb friction: $c_{f1}: 0.0 \, \text{N m}$
+  - Second actuator coulomb friction: $c_{f2}: 0.0 \, \text{N m}$
   - Motor Inertia: $I_r = 0.0 \, \text{kg m}^2$
   - Gear ratio: $g_r: 6.0$
-  - First Motor Torque limit $\tau_\textrm{max1} = 0.0 \, \text{N m}$
-  - Second Motor Torque limit $\tau_\textrm{max2} = 6.0 \, \text{N m}$
+  - First Motor Torque limit $\tau_{max1} = 0.0 \, \text{N m}$
+  - Second Motor Torque limit $\tau_{max2} = 6.0 \, \text{N m}$
 
 More information about the dynamic model of the double pendulum can be found
 here: [Double Pendulum
@@ -44,35 +44,35 @@ the threshold line at $h=0.45 \, \text{m}$ (origin at the mounting point).
 For the evaluation multiple criteria are evaluated and weighted to calculate an
 overall score (Real AI Score). The criteria are:
 
-  - **Swingup Success** $c_\textrm{success}$: Whether the swingup was successful, i.e. if the
+  - **Swingup Success** $c_{success}$: Whether the swingup was successful, i.e. if the
     end-effector is above the threshold line in the end of the simulation.
-  - **Swingup time** $c_\textrm{time}$: The time it takes for the acrobot to reach the goal region
+  - **Swingup time** $c_{time}$: The time it takes for the acrobot to reach the goal region
     above the threhhold line and *stay there*. If the end-effector enters the
     goal region but falls below the line before the simulation time is over the
     swingup is not considered successful! The swingup time is the time when the
     end-effector enters the goal region and does not leave the region until the end.
-  - **Energy** $c_\textrm{energy}$: The mechanical energy used during the execution. 
-  - **Max Torque** $c_\textrm{$\tau$, max}$: The peak torque that was used during the execution.
-  - **Integrated Torque** $c_\textrm{$\tau$, integ}$: The time integral over the used torque over the
+  - **Energy** $c_{energy}$: The mechanical energy used during the execution. 
+  - **Max Torque** $c_{\tau, max}$: The peak torque that was used during the execution.
+  - **Integrated Torque** $c_{\tau, integ}$: The time integral over the used torque over the
     execution duration.
-  - **Torque Cost** $c_\textrm{$\tau$, cost}$: A quadratic cost on the used torques ( $c_\textrm{$\tau$, cost} = \sum u^TRu$, with R
+  - **Torque Cost** $c_{\tau, cost}$: A quadratic cost on the used torques ( $c_{\tau, cost} = \sum u^TRu$, with R
     = 1).
-  - **Torque Smoothness** $c_\textrm{$\tau$, smooth}$: The standard deviation of the changes in the torque
+  - **Torque Smoothness** $c_{\tau, smooth}$: The standard deviation of the changes in the torque
     signal.
-  - **Velocity Cost** $c_\textrm{vel, cost}$: A quadratic cost on the joint velocities that were reached
-    during the execution ( $c_\textrm{vel} = \dot{q}^T Q \dot{q}$, with Q = identity)
+  - **Velocity Cost** $c_{vel, cost}$: A quadratic cost on the joint velocities that were reached
+    during the execution ( $c_{vel} = \dot{q}^T Q \dot{q}$, with Q = identity)
 
 These criteria are used to calculate the overall Real AI Score with the formula
 
 $$
 \begin{equation}
-S = c_\textrm{success} \left( w_\textrm{time}\frac{c_\textrm{time}}{n_\textrm{time}} +
-w_\textrm{energy}\frac{c_\textrm{energy}}{n_\textrm{energy}} +
-w_\textrm{$\tau$, max}\frac{c_\textrm{$\tau, max}}{n_\textrm{$\tau$, max}} +
-w_\textrm{$\tau$, integ}\frac{c_\textrm{$\tau, integ}}{n_\textrm{$\tau$, integ}} +
-w_\textrm{$\tau$, cost}\frac{c_\textrm{$\tau, cost}}{n_\textrm{$\tau$, cost}} +
-w_\textrm{$\tau$, smooth}\frac{c_\textrm{$\tau, smooth}}{n_\textrm{$\tau$, smooth}} +
-w_\textrm{vel, cost}\frac{c_\textrm{vel, cost}}{n_\textrm{vel, cost}}
+S = c_{success} \left( w_{time}\frac{c_{time}}{n_{time}} +
+w_{energy}\frac{c_{energy}}{n_{energy}} +
+w_{\tau, max}\frac{c_{$\tau, max}}{n_{\tau, max}} +
+w_{\tau, integ}\frac{c_{$\tau, integ}}{n_{\tau, integ}} +
+w_{\tau, cost}\frac{c_{$\tau, cost}}{n_{\tau, cost}} +
+w_{\tau, smooth}\frac{c_{$\tau, smooth}}{n_{\tau, smooth}} +
+w_{vel, cost}\frac{c_{vel, cost}}{n_{vel, cost}}
 \right)
 \end{equation}
 $$
