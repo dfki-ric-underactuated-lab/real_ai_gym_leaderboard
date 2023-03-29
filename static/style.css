@@ -10,14 +10,14 @@ html {
 }
 
 body {
-  color: #444;
+  color: #001B44;
   font-family: Arial, sans-serif; 
   /*font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;*/
   font-size: 12px;
   line-height: 1.7;
   padding: 1em;
   margin: auto;
-  max-width: 64em;
+  max-width: 96em;
   background: #fefefe;
   text-align: left;
 }
@@ -227,16 +227,18 @@ figcaption {
 
 table {
   margin-bottom: 2em;
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+/*  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;*/
   border-spacing: 0;
   border-collapse: collapse;
-  margin-left:auto;
-  margin-right:auto;
+/*  margin-left:auto;
+  margin-right:auto; */
+  /* font-size: 10px; */
 }
 
+/*
 table th {
-  padding: .2em 1em;
+  padding: .1em 1em;
   background-color: #eee;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
@@ -248,7 +250,15 @@ table td {
   border-left: 1px solid #ddd;
   vertical-align: top;
 }
+*/
 
+table th {
+  padding: .05em 1em;
+}
+
+table td {
+  padding: .05em 1em;
+}
 
 /*
  * custom table style
@@ -256,23 +266,24 @@ table td {
  */
 
 table.sortable th{
-    background-color: #dbeafe;
+    background-color: #F6FFFE;
 }
 
 table.sortable th:hover{
     cursor: pointer;
-    background-color: #bfdbfe;
+    background-color: #FFFCEB;
 }
 
+/* uncomment for arrows in the table header*/
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
-    content: " ↕️"
+    content: "↑↓"
 }
 
 th.sorttable_sorted::after {
-    content: " ⬆️"
+    content: " ↑"
 }
 th.sorttable_sorted_reverse::after {
-    content: " ⬇️"
+    content: " ↓"
 }
 
 #sorttable_sortfwdind, #sorttable_sortrevind { display: none; } 

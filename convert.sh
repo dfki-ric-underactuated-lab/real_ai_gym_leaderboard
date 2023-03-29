@@ -36,7 +36,7 @@ for csv_file in ${csv_dir}/*.csv; do
 
   # convert to html but changing the title
   # heading_text_prefix="Welcome\ to\ the\ "
-  heading_text_prefix="🤖\ "
+  heading_text_prefix=""
   heading_text=$(echo "$file_name" | sed -e 's/_/\ /g' -e 's/\b\(.\)/\u\1/g' -e "s/^/${heading_text_prefix}/")
   to_html_cmd="pandoc -s -o $out_dir/$file_name.html --mathjax --standalone --metadata title='"$heading_text"' \
 	  --css=static/style.css --template=templates/default.html5 --include-after=static/style_tables.js $out_dir/$file_name.md"
