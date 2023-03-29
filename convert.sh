@@ -35,7 +35,8 @@ for csv_file in ${csv_dir}/*.csv; do
 
 
   # convert to html but changing the title
-  heading_text_prefix="Welcome\ to\ the\ "
+  # heading_text_prefix="Welcome\ to\ the\ "
+  heading_text_prefix="🤖\ "
   heading_text=$(echo "$file_name" | sed -e 's/_/\ /g' -e 's/\b\(.\)/\u\1/g' -e "s/^/${heading_text_prefix}/")
   to_html_cmd="pandoc -s -o $out_dir/$file_name.html --mathjax --standalone --metadata title='"$heading_text"' \
 	  --css=static/style.css --template=templates/default.html5 --include-after=static/style_tables.js $out_dir/$file_name.md"
@@ -58,14 +59,14 @@ pandoc -s -o $out_dir/index.html --metadata title="Real AI Gym Leaderboards" --c
 placeholder="<p>:::leaderboard-links:::</p>"
 
 # and replace with this...
-table="<table>"
+table="<ul>"
 for file_name in "${processed_files[@]}"; do
   link_name="${file_name}.html"
-  table_text_prefix="> "
+  table_text_prefix=""
   table_text=$(echo "$file_name" | sed -e 's/_/ /g' -e 's/\b\(.\)/\u\1/g' -e "s/^/${table_text_prefix} /")
-  table+="<tr><td><a href='${link_name}' class='file-link'>${table_text}</a></td></tr>"
+  table+="<li><a href='${link_name}' class='file-link'>${table_text}</a></li>"
 done
-table+="</table>"
+table+="</ul>"
 
 sed -i "s|${placeholder}|${table}|g" $out_dir/index.html
 
