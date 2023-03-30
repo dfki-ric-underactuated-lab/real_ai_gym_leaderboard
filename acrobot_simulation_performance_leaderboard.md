@@ -68,10 +68,10 @@ $$
 \begin{equation}
 S = c_{success} \left( w_{time}\frac{c_{time}}{n_{time}} +
 w_{energy}\frac{c_{energy}}{n_{energy}} +
-w_{\tau, max}\frac{c_{$\tau, max}}{n_{\tau, max}} +
-w_{\tau, integ}\frac{c_{$\tau, integ}}{n_{\tau, integ}} +
-w_{\tau, cost}\frac{c_{$\tau, cost}}{n_{\tau, cost}} +
-w_{\tau, smooth}\frac{c_{$\tau, smooth}}{n_{\tau, smooth}} +
+w_{\tau, max}\frac{c_{\tau, max}}{n_{\tau, max}} +
+w_{\tau, integ}\frac{c_{\tau, integ}}{n_{\tau, integ}} +
+w_{\tau, cost}\frac{c_{\tau, cost}}{n_{\tau, cost}} +
+w_{\tau, smooth}\frac{c_{\tau, smooth}}{n_{\tau, smooth}} +
 w_{vel, cost}\frac{c_{vel, cost}}{n_{vel, cost}}
 \right)
 \end{equation}
@@ -79,13 +79,13 @@ $$
 
 The weights and normalizations are:
 
-| Criterion         | normalization $n$ | weight $w$   |
+| Criterion         | normalization $n$ | weight $w$        |
 | ------------------|-------------------|-------------------|
 | Swingup Time      | 10.0              | 0.2               |
-| Energy            | 100.0             | 0.0               |
-| Max Torque        | 6.0               | 0.2               |
-| Integrated Torque | 60.0              | 0.2               |
-| Torque Cost       | 360               | 0.0               |
+| Energy            | 100.0             | 0.1               |
+| Max Torque        | 6.0               | 0.1               |
+| Integrated Torque | 60.0              | 0.1               |
+| Torque Cost       | 360               | 0.1               |
 | Torque Smoothness | 12.0              | 0.2               |
 | Velocity Cost     | 1000.0            | 0.2               |
 
