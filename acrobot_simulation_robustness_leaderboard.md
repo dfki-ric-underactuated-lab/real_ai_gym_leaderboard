@@ -31,6 +31,7 @@ The model parameters of the acrobot are:
 More information about the dynamic model of the double pendulum can be found
 here: [Double Pendulum
 Dynamics](https://dfki-ric-underactuated-lab.github.io/double_pendulum/dynamics.html).
+For a urdf file with this model see here: [URDF](https://github.com/dfki-ric-underactuated-lab/double_pendulum/tree/main/data/system_identification/identified_parameters/design_C.0/model_3.1).
 
 The acrobot is simulated with a Runge-Kutta 4 integrator with a timestep of $dt
 = 0.002 \, \text{s}$ for $T = 10 \, \text{s}$. The initial acrobot configuration
