@@ -5,7 +5,7 @@ methods in simulation. The task for the controller is to swingup and balance
 the pendubot and keep the end-effector above a threshold line.
 
 <div align="center">
-<img width="400" src="https://github.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/blob/main/data/pendubot/real_system/ilqr_tvlqr_lqr/video_exp10_compressed.gif">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system/ilqr_tvlqr_lqr/video_exp10.gif">
 </div>
 
 The model parameters identified by us with a least squares optimization of the
