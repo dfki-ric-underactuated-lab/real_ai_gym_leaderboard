@@ -6,7 +6,7 @@ the pendubot and keep the end-effector above the threshhold line.
 
 
 <div align="center">
-<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system/ilqr_tvlqr_lqr/video_exp10.gif">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system/ilqr_tvlqr_lqr/experiment10/video.gif">
 </div>
 
 The model parameters identified by us with a least squares optimization of the
