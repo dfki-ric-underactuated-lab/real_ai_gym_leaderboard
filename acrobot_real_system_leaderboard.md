@@ -1,8 +1,8 @@
 ## Rules
 
-The simulation leaderboard compares the performance of different control
-methods in simulation. The task for the controller is to swingup and balance
-the acrobot and keep the end-effector above a threshold line.
+The real system leaderboard compares the performance of different control
+methods on the real hardware. The task for the controller is to swingup and balance
+the acrobot and keep the end-effector above the threshhold line.
 
 <div align="center">
 <img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/real_system/ilqr_tvlqr_lqr/video_exp03.gif">
@@ -95,11 +95,17 @@ The weights and normalizations are:
 | Torque Smoothness | 12.0              | 0.2               |
 | Velocity Cost     | 1000.0            | 0.2               |
 
+The listed number for swingup time, energy, etc. in the leaderboard are the
+scores for from the best attempt. The 'Best RealAIScore' is the score of that
+attempt. The 'Average RealAIScore' is the average score over 10 attempts.
+Unsuccessful swingups (where the end effector is not above the threshhold line
+in the end of the experiment (i.e. after $10\,\text{s}$)) have a score of 0. 
+
 ## Participating
 
 If you want to participate in this leaderboard with your own controller have a
 look at the [leaderboard
-explanation](https://github.com/dfki-ric-underactuated-lab/double_pendulum/tree/main/leaderboard/real_system/acrobot)
+explanation](https://github.com/dfki-ric-underactuated-lab/double_pendulum/tree/main/leaderboard/real_hardware/acrobot)
 in the double pendulum repository.  We recommend submitting the controller
 first to the acrobot [simulation
 leaderboard](https://dfki-ric-underactuated-lab.github.io/real_ai_gym_leaderboard/acrobot_simulation_performance_leaderboard.html)
