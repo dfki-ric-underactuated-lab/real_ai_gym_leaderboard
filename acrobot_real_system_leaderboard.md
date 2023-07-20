@@ -5,7 +5,7 @@ methods on the real hardware. The task for the controller is to swingup and bala
 the acrobot and keep the end-effector above the threshhold line.
 
 <div align="center">
-<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/real_system/ilqr_tvlqr_lqr/video_exp03.gif">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/real_system/ilqr_tvlqr_lqr/experiment03/video.gif">
 </div>
 
 The model parameters identified by us with a least squares optimization of the
