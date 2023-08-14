@@ -2,11 +2,13 @@
 
 The real system leaderboard compares the performance of different control
 methods on the real hardware. The task for the controller is to swingup and balance
-the pendubot and keep the end-effector above the threshhold line.
+the pendubot and keep the end-effector above the threshold line.
 
 
 <div align="center">
 <img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system/ilqr_tvlqr_lqr/experiment10/video.gif">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system/MC_PILCO/experiment02/video.gif">
+<figcaption>Videos from left to right: TVLQR, MC-PILCO</figcaption>
 </div>
 
 The model parameters identified by us with a least squares optimization of the

@@ -2,10 +2,12 @@
 
 The real system leaderboard compares the performance of different control
 methods on the real hardware. The task for the controller is to swingup and balance
-the acrobot and keep the end-effector above the threshhold line.
+the acrobot and keep the end-effector above the threshold line.
 
 <div align="center">
 <img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/real_system/ilqr_tvlqr_lqr/experiment03/video.gif">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/real_system/MC-PILCO/experiment08/video.gif">
+<figcaption>Videos from left to right: TVLQR, MC-PILCO</figcaption>
 </div>
 
 The model parameters identified by us with a least squares optimization of the
