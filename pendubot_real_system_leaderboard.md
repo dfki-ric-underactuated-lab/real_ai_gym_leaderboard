@@ -8,7 +8,8 @@ the pendubot and keep the end-effector above the threshold line.
 <div align="center">
 <img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system/ilqr_tvlqr_lqr/experiment10/video.gif">
 <img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system/MC-PILCO/experiment02/video.gif">
-<figcaption>Videos from left to right: TVLQR, MC-PILCO</figcaption>
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system/MC-PILCO/experiment07/video.gif">
+<figcaption>Videos from left to right: TVLQR, MC-PILCO, SAC</figcaption>
 </div>
 
 The model parameters identified by us with a least squares optimization of the
