@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: create_output
         id: output
         run: |
@@ -20,7 +20,7 @@ jobs:
           cp -R static output/static # copy static dir 
           ./convert.sh # convert files with pandoc
       
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v4
         with:
           name: page
           path: output
@@ -33,14 +33,14 @@ jobs:
       url: ${{steps.deployment.outputs.page_url}}
       
     steps:
-    - uses: actions/download-artifact@master
+    - uses: actions/download-artifact@v4
       with:
         name: page
         path: .
-    - uses: actions/configure-pages@v1
-    - uses: actions/upload-pages-artifact@v1
+    - uses: actions/configure-pages@v4
+    - uses: actions/upload-pages-artifact@v3
       with:
         path: .
     - id: deployment
-      uses: actions/deploy-pages@main
+      uses: actions/deploy-pages@v4
  
