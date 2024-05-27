@@ -67,14 +67,14 @@ These criteria are used to calculate the overall Real AI Score with the formula
 
 $$
 \begin{equation}
-S = c_{success} \left( w_{time}\frac{c_{time}}{n_{time}} +
+S = c_{success} \left( 1 - \left( w_{time}\frac{c_{time}}{n_{time}} +
 w_{energy}\frac{c_{energy}}{n_{energy}} +
 w_{\tau, max}\frac{c_{\tau, max}}{n_{\tau, max}} +
 w_{\tau, integ}\frac{c_{\tau, integ}}{n_{\tau, integ}} +
 w_{\tau, cost}\frac{c_{\tau, cost}}{n_{\tau, cost}} +
 w_{\tau, smooth}\frac{c_{\tau, smooth}}{n_{\tau, smooth}} +
 w_{vel, cost}\frac{c_{vel, cost}}{n_{vel, cost}}
-\right)
+\right) \right)
 \end{equation}
 $$
 
