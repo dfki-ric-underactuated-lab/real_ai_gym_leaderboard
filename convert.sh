@@ -67,7 +67,7 @@ for file_name in "${processed_files_v1[@]}"; do
 done
 table+="</ul>"
 
-# sed -i "s|${placeholder}|${table}|g" $out_dir/index.html
+sed -i "s|${placeholder}|${table}|g" $out_dir/index.html
 
 # repeat the same for all leaderboard_v2.csv files
 # keep track of processed files
