@@ -13,6 +13,10 @@ Currently open sourced RealAIGym repositories are
 
 :::leaderboard-links:::
 
+## Archived Leaderboards
+
+:::archived-leaderboard-links:::
+
 ## Participating
 Instructions and rules for participating in the competition can be found under
 the respective leaderboards.
