@@ -12,7 +12,7 @@ processed_files_v1=()
 for csv_file in ${csv_dir}/*.csv; do
 
 	# get the file_name
-	file_name=$(basename ${csv_file} .csv)
+	file_name=${csv_dir}/$(basename ${csv_file} .csv)
 
 	to_md_cmd="pandoc -s -o $out_dir/$file_name.md -f csv --metadata title=$file_name $csv_file"
 	# convert table to md
@@ -77,7 +77,7 @@ processed_files_v2=()
 for csv_file in ${archived_csv_dir}/*.csv; do
 
 	# get the file_name
-	file_name=$(basename ${csv_file} .csv)
+	file_name=${archived_csv_dir}/$(basename ${csv_file} .csv)
 
 	to_md_cmd="pandoc -s -o $out_dir/$file_name.md -f csv --metadata title=$file_name $csv_file"
 	# convert table to md
@@ -90,7 +90,7 @@ for csv_file in ${archived_csv_dir}/*.csv; do
 	sed -i 's/\\\[/\  \[/g' $out_dir/$file_name.md
 
 	# find matching description.md in root dir, check if it exists. if exists, append it to the md file generated in the last step.
-	if [ -e ${archived_csv_dir}/$file_name.md ]; then
+	if [ -e $file_name.md ]; then
 		echo "File $file_name has additional md content!"
 		# append newline
 		printf "\n" >>$out_dir/$file_name.md
