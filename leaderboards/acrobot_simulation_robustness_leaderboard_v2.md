@@ -5,7 +5,7 @@ methods by perturbing the simulation e.g. with noise or delay. The task for the
 controller is to swingup and balance the acrobot even with these perturbations.
 
 <div align="center">
-<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/robustness/pflcol_lqr/score_plot.png">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/robustness_v2/ilqr_tvlqr/score_plot.png">
 </div>
 
 The model parameters of the acrobot are:

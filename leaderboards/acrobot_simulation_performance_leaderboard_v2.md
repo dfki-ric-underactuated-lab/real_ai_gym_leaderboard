@@ -5,7 +5,7 @@ methods in simulation. The task for the controller is to swingup and balance
 the acrobot and keep the end-effector above the threshold line.
 
 <div align="center">
-<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/simulation/ilqr_tvlqr/sim_video.gif">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/simulation_v2/ilqr_tvlqr/sim_video.gif">
 </div>
 
 The model parameters of the acrobot are:
