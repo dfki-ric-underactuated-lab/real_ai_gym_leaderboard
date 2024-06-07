@@ -72,7 +72,7 @@ These criteria are used to calculate the overall Real AI Score with the formula
 $$
 \begin{equation}
 S = c_{success} \left( 1 -
-\sum_{i \in \{ "time", "energy", "\tau, cost", "\tau, smooth", "vel, cost" \}}
+\sum_{i \in ( 'time', 'energy', '\tau, cost', '\tau, smooth', 'vel, cost' )}
 \tanh \left(\frac{c_{i}}{n_[i}}\right)\right)
 \end{equation}
 $$
