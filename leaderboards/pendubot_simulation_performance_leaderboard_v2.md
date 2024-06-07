@@ -71,14 +71,10 @@ These criteria are used to calculate the overall Real AI Score with the formula
 
 $$
 \begin{equation}
-S = c_{success} \left( 1 - \frac{1}{N}\left( \frac{c_{time}}{n_{time}} +
-\tanh(\frac{c_{energy}}{n_{energy}}) +
-\tanh(\frac{c_{\tau, max}}{n_{\tau, max}}) +
-\tanh(\frac{c_{\tau, integ}}{n_{\tau, integ}}) +
-\tanh(\frac{c_{\tau, cost}}{n_{\tau, cost}}) +
-\tanh(\frac{c_{\tau, smooth}}{n_{\tau, smooth}}) +
-\tanh(\frac{c_{vel, cost}}{n_{vel, cost}})
-\right) \right)
+S = c_{success} \left( 1 -
+\sum_{i \in \{ "time", "energy", "\tau, cost", "\tau, smooth", "vel, cost" \}}
+\tanh \left(\frac{c_{i}}{n_[i}}\right)\right)
+\end{equation}
 $$
 
 The normalizations coefficients are:
