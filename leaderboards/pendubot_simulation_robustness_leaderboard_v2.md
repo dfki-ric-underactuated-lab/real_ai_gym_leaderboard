@@ -33,8 +33,8 @@ here: [Double Pendulum
 Dynamics](https://dfki-ric-underactuated-lab.github.io/double_pendulum/dynamics.html).
 In the [Double Pendulum
 Repository](https://github.com/dfki-ric-underactuated-lab/double_pendulum) the
-parameters above are labeled as 'designC.1/model1.0'.
-For a urdf file with this model see here: [URDF](https://github.com/dfki-ric-underactuated-lab/double_pendulum/tree/main/data/system_identification/identified_parameters/design_C.1/model_1.0).
+parameters above are labeled as 'designC.1/model1.1'.
+For a urdf file with this model see here: [URDF](https://github.com/dfki-ric-underactuated-lab/double_pendulum/tree/main/data/system_identification/identified_parameters/design_C.1/model_1.1).
 
 The pendubot is simulated with a Runge-Kutta 4 integrator with a timestep of $dt
 = 0.002 \, \text{s}$ for $T = 10 \, \text{s}$. The initial pendubot configuration
