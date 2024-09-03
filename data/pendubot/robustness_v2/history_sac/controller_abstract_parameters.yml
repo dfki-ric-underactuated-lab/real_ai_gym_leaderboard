@@ -1,0 +1,5 @@
+coulomb_fric1: 0.0
+coulomb_fric2: 0.0
+damping1: 0.0
+damping2: 0.0
+gravity_compensation_g: 0.0
