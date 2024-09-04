@@ -7,7 +7,7 @@ the pendubot and keep the end-effector above the threshold line.
 During the execution external perturbations in the form of Gaußian torque peaks
 have been applied by the motors at both links. In total there were 4
 perturbations, 2 at each joint, with a standard deviation between 0.05s and
-0.1s and an amplitude between 0.5Nm and 0.75Nm. The perturbations are randomly
+0.1s and an amplitude between 0.2Nm and 0.5Nm. The perturbations are randomly
 generated and different in all 10 trials.
 
 <div align="center">
