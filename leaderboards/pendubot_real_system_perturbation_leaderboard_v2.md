@@ -88,7 +88,7 @@ The weights and normalizations are:
 | ------------------|-------------------|
 | Swingup Time      | 20.0              |
 | Energy            | 60.0              |
-| Torque Cost       | 20                |
+| Torque Cost       | 100               |
 | Torque Smoothness | 4.0               |
 | Velocity Cost     | 400.0             |
 
