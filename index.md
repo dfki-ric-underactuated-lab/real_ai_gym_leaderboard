@@ -13,6 +13,10 @@ Currently open sourced RealAIGym repositories are
 
 :::leaderboard-links:::
 
+## IROS 2024 Leaderboards
+
+:::iros2024-leaderboard-links:::
+
 ## Archived Leaderboards
 
 :::archived-leaderboard-links:::

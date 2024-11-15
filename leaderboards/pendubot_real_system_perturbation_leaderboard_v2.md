@@ -12,7 +12,7 @@ generated and different in all 10 trials.
 
 <div align="center">
 <img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_perturbed/ilqr_tvlqr_lqr/experiment09/video.gif">
-<figcaption>Videos from left to right: TVLQR, MC-PILCO</figcaption>
+<figcaption>Videos from left to right: TVLQR</figcaption>
 </div>
 
 The model parameters identified by us with a least squares optimization of the
