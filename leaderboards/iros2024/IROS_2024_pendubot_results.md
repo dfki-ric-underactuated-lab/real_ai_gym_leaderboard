@@ -1,8 +1,8 @@
 <div align="center">
-<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_iros2024/ar_eapo/experiment04/video.gif">
-<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_iros2024/mcpilco/experiment08/video.gif">
-<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_iros2024/history_sac/experiment08/video.gif">
-<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_iros2024/evolsac/experiment03/video.gif">
+<img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_iros2024/ar_eapo/experiment04/video.gif">
+<img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_iros2024/mcpilco/experiment08/video.gif">
+<img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_iros2024/history_sac/experiment08/video.gif">
+<img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_iros2024/evolsac/experiment03/video.gif">
 <figcaption>Videos from left to right: AR_EAPO, MC-PILCO, History_SAC, EvolSAC</figcaption>
 </div>
 
