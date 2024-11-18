@@ -1,6 +1,8 @@
 <div align="center">
 <img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/real_system_iros2024/mcpilco/experiment07/video.gif">
-<figcaption>Videos from left to right: MC-PILCO</figcaption>
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/real_system_iros2024/ar_eapo/experiment02/video.gif">
+<img width="400" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/real_system_iros2024/history_sac/experiment03/video.gif">
+<figcaption>Videos from left to right: MC-PILCO, AR_EAPO, History_SAC</figcaption>
 </div>
 
 
