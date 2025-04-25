@@ -3,6 +3,7 @@
 <img width="250" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/simulation_icra2025/vimppi/sim_video.gif">
 <img width="250" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/simulation_icra2025/acados_mpc/sim_video.gif">
 <img width="250" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/simulation_icra2025/mcpilco/sim_video.gif">
+<img width="250" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/acrobot/simulation_icra2025/prx_acrobot_analytical/sim_video.gif">
 <figcaption>Videos from left to right: AR_EAPO, VIMPPI, Acados MPC, MC-PILCO</figcaption>
 </div>
 
