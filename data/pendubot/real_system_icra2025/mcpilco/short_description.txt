@@ -1,0 +1,1 @@
+Controller trained with the Model-Based Reinforcement Learning algorithm MC-PILCO.

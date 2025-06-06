@@ -1,0 +1,1 @@
+Variational Integrator Model Predictive Path Integral for direct torque planning

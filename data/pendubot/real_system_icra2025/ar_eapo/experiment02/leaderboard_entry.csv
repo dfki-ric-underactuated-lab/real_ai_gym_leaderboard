@@ -1,0 +1,2 @@
+Controller,Short Controller Description,#swingups,Uptime [s],RealAI Score,Username
+AR-EAPO,Policy trained with average reward maximum entropy RL,14,40.754,0.679,rnilva
