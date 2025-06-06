@@ -1,1 +1,1 @@
-AcadosMPC
+acados_mpc
