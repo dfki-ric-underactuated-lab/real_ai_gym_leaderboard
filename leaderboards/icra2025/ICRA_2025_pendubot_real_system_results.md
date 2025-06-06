@@ -1,8 +1,8 @@
 <div align="center">
 <img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_icra2025/acados_mpc/experiment01/video.gif">
 <img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_icra2025/ar_eapo/experiment01/video.gif">
-<img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_icra202/mcpilco/experiment01/video.gif">
-<img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_icra202/vimppi/experiment01/video.gif">
+<img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_icra2025/mcpilco/experiment01/video.gif">
+<img width="350" src="https://raw.githubusercontent.com/dfki-ric-underactuated-lab/real_ai_gym_leaderboard/main/data/pendubot/real_system_icra2025/vimppi/experiment01/video.gif">
 <figcaption>Videos from left to right: Acados_MPC, AR_EAPO, MCPILCO, VIMPPI</figcaption>
 </div>
 
