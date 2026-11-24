@@ -11,19 +11,19 @@ Currently open sourced RealAIGym repositories are
 
 ## Leaderboards
 
-:::leaderboard-links:::
+LEADERBOARD_LINKS
 
 ## ICRA 2025 Leaderboards
 
-:::icra2025-leaderboard-links:::
+ICRA2025_LEADERBOARD_LINKS
 
 ## IROS 2024 Leaderboards
 
-:::iros2024-leaderboard-links:::
+IROS2024_LEADERBOARD_LINKS
 
 ## Archived Leaderboards
 
-:::archived-leaderboard-links:::
+ARCHIVED_LEADERBOARD_LINKS
 
 ## Participating
 Instructions and rules for participating in the competition can be found under

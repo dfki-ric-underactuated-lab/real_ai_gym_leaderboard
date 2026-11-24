@@ -61,7 +61,7 @@ done
 pandoc -s -o $out_dir/index.html --metadata title="Real AI Gym Leaderboards" --css=static/style.css --template=templates/default.html5 index.md
 
 # in the generated html, search for this string...
-placeholder="<p>:::leaderboard-links:::</p>"
+placeholder="<p>LEADERBOARD_LINKS</p>"
 
 # and replace with this...
 table="<ul>"
@@ -126,7 +126,7 @@ for csv_file in ${archived_csv_dir}/*.csv; do
 done
 
 # in the generated html, search for this string...
-placeholder_v2="<p>:::archived-leaderboard-links:::</p>"
+placeholder_v2="<p>ARCHIVED_LEADERBOARD_LINKS</p>"
 
 # and replace with this...
 table="<ul>"
@@ -190,7 +190,7 @@ for csv_file in ${iros2024_csv_dir}/*.csv; do
 done
 
 # in the generated html, search for this string...
-placeholder_v3="<p>:::iros2024-leaderboard-links:::</p>"
+placeholder_v3="<p>IROS2024_LEADERBOARD_LINKS</p>"
 
 # and replace with this...
 table="<ul>"
@@ -254,7 +254,7 @@ for csv_file in ${icra2025_csv_dir}/*.csv; do
 done
 
 # in the generated html, search for this string...
-placeholder_v4="<p>:::icra2025-leaderboard-links:::</p>"
+placeholder_v4="<p>ICRA2025_LEADERBOARD_LINKS</p>"
 
 # and replace with this...
 table="<ul>"
